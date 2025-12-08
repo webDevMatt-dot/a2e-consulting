@@ -13,9 +13,9 @@ export default function About() {
             />
 
             {/* Philosophy Section */}
-            <section className="py-24 bg-white">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-12 md:mb-16">
                         <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-sm font-bold mb-4">
                             Our Philosophy
                         </span>
@@ -63,10 +63,10 @@ export default function About() {
             </section>
 
             {/* Vision & Mission Section */}
-            <section className="py-24 bg-gray-50">
+            <section className="py-16 md:py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-white p-12 rounded-3xl shadow-sm">
+                        <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm">
                             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-8">
                                 <Eye size={24} />
                             </div>
@@ -75,7 +75,7 @@ export default function About() {
                                 To create a future where financial complexity is simplified, enabling businesses and individuals to focus on what matters most.
                             </p>
                         </div>
-                        <div className="bg-blue-950 p-12 rounded-3xl shadow-xl text-white">
+                        <div className="bg-blue-950 p-8 md:p-12 rounded-3xl shadow-xl text-white">
                             <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-blue-200 mb-8 border border-white/10">
                                 <Target size={24} />
                             </div>
@@ -88,7 +88,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="py-24 bg-white">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-sm font-bold mb-4">
                         Our Foundation

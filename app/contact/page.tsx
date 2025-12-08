@@ -53,12 +53,12 @@ export default function Contact() {
                 description="Ready to streamline your financial operations? Reach out to us today and we’ll respond within 24-48 hours."
             />
 
-            <section className="py-20">
+            <section className="py-12 md:py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-3 gap-12">
+                    <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
 
                         {/* LEFT COLUMN: The Form */}
-                        <div className="lg:col-span-2 bg-white p-10 rounded-3xl shadow-sm border border-gray-100">
+                        <div className="lg:col-span-2 bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-100">
                             <h3 className="text-2xl font-bold text-gray-900 mb-8">Send Us a Message</h3>
 
                             <form onSubmit={handleSubmit} className="space-y-6">
@@ -137,7 +137,7 @@ export default function Contact() {
                         <div className="space-y-6">
 
                             {/* 1. The Blue Contact Info Card */}
-                            <div className="bg-blue-900 text-white p-10 rounded-3xl h-fit shadow-xl">
+                            <div className="bg-blue-900 text-white p-6 md:p-10 rounded-3xl h-fit shadow-xl">
                                 <h3 className="text-2xl font-bold mb-8">Get in Touch</h3>
                                 <div className="space-y-8">
 
@@ -150,7 +150,7 @@ export default function Contact() {
                                             <p className="text-blue-200 text-sm mb-1">Email</p>
                                             <a
                                                 href="mailto:admin@a2econsultinggroup.com"
-                                                className="font-medium hover:text-blue-300 hover:underline transition"
+                                                className="font-medium hover:text-blue-300 hover:underline transition break-all"
                                             >
                                                 admin@a2econsultinggroup.com
                                             </a>
@@ -208,7 +208,7 @@ export default function Contact() {
 
                             {/* 2. The WhatsApp "Pop" Card (Text Link only) */}
                             <div className="bg-green-50 border border-green-200 p-6 rounded-3xl flex items-center gap-5">
-                                <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30">
+                                <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30 flex-shrink-0">
                                     <MessageCircle size={28} fill="white" />
                                 </div>
                                 <div>
