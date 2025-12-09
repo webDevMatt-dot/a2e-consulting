@@ -21,7 +21,9 @@ const services = [
             "Tax preparation and planning",
             "SARS Registration and Compliance",
             "Income Tax (Individuals & Companies)",
-            "VAT Calculations (VAT201s)"
+            "VAT Calculations (VAT201s)",
+            "Cross-border permit applications and renewals",
+            "RIB (Remover of goods in Bond by road) applications and renewals"
         ]
     },
     {
