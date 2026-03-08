@@ -82,9 +82,9 @@ export default function RootLayout({
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.google.com/maps/search/?api=1&query=8+Cork+Tree+Street,+Moreleta+Park,+Pretoria" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-white transition group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=31+Ouklipmuur+Avenue,+Equestria,+Pretoria" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-white transition group">
                       <MapPin className="flex-shrink-0 text-blue-500 group-hover:text-blue-400" size={20} />
-                      <span>8 Cork Tree Street, Moreleta Park, Pretoria</span>
+                      <span>31 Ouklipmuur Avenue, Equestria, Pretoria</span>
                     </a>
                   </li>
                 </ul>

@@ -183,12 +183,12 @@ export default function Contact() {
                                         <div>
                                             <p className="text-blue-200 text-sm mb-1">Office</p>
                                             <a
-                                                href="https://www.google.com/maps/search/?api=1&query=8+Cork+Tree+Street,+Moreleta+Park,+Pretoria"
+                                                href="https://www.google.com/maps/search/?api=1&query=31+Ouklipmuur+Avenue,+Equestria,+Pretoria"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="font-medium hover:text-blue-300 hover:underline transition"
                                             >
-                                                8 Cork Tree Street, Moreleta Park<br />Pretoria, Gauteng, 0181
+                                                31 Ouklipmuur Avenue, Equestria<br />Pretoria, Gauteng, 0184
                                             </a>
                                         </div>
                                     </div>
