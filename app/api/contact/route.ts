@@ -6,12 +6,8 @@ export async function POST(request: Request) {
         const body = await request.json();
         const { firstName, lastName, email, phone, service, message } = body;
 
-        // --- DEBUGGING: PRINT SETTINGS TO TERMINAL ---
-        console.log("Attempting to send email...");
-        console.log("Host:", process.env.SMTP_HOST);
-        console.log("User:", process.env.SMTP_USER);
-        console.log("Password Exists?", process.env.SMTP_PASSWORD ? "YES" : "NO");
-        // ---------------------------------------------
+        // Log initiation (no secrets)
+        console.log("Processing contact form submission...");
 
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
@@ -39,7 +35,7 @@ export async function POST(request: Request) {
 
         const mailOptions = {
             from: `"Website Form" <${process.env.SMTP_USER}>`,
-            to: 'mgluis630@gmail.com',
+            to: process.env.SMTP_USER, // Using the env var to avoid hardcoding the email value
             replyTo: email,
             subject: `New Enquiry: ${service} - ${firstName} ${lastName}`,
             html: `<p>Name: ${firstName} ${lastName}</p><p>Phone: ${phone}</p><p>Message: ${message}</p>`,
