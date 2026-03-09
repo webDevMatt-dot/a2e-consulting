@@ -9,10 +9,11 @@ export async function POST(request: Request) {
         // Log initiation (no secrets)
         console.log("Processing contact form submission...");
 
+        const port = Number(process.env.SMTP_PORT) || 587;
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
-            port: Number(process.env.SMTP_PORT) || 587,
-            secure: false,
+            port: port,
+            secure: port === 465, // Use SSL for port 465, TLS/None for others
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASSWORD,
@@ -35,7 +36,7 @@ export async function POST(request: Request) {
 
         const mailOptions = {
             from: `"Website Form" <${process.env.SMTP_USER}>`,
-            to: process.env.SMTP_USER, // Using the env var to avoid hardcoding the email value
+            to: process.env.CONTACT_RECIPIENT_EMAIL || process.env.SMTP_USER, // Use dedicated recipient or fallback to SMTP_USER
             replyTo: email,
             subject: `New Enquiry: ${service} - ${firstName} ${lastName}`,
             html: `<p>Name: ${firstName} ${lastName}</p><p>Phone: ${phone}</p><p>Message: ${message}</p>`,
